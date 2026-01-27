@@ -1,5 +1,5 @@
 export interface HealthCheckResponse {
-    status: string;
+    status: number;
     uptime: number;
     timestamp: string;
     version: string;
