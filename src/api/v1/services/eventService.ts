@@ -5,5 +5,5 @@ import { AttendeeModel } from "../models/attendeemodel";
 
 
 export const getAllEvents = () => {
-  return event;
+    return event;
 };
