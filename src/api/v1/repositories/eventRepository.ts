@@ -23,4 +23,4 @@ export const event: EventModel[] = [
         registrationCount: 30
     }
 
-]
+];
