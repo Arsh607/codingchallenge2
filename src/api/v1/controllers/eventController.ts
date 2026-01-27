@@ -7,7 +7,7 @@ export const getAllEvents = (req: Request, res: Response,): void => {
     const result: EventModel[] = fetchEvents.getAllEvents();
     const count : number = result.length;
     
-    res.json({ 
+    res.status(HTTP_STATUS.OK).json({ 
         message: `Events retrieved`, 
         count: `${count}`,
         data: result,
