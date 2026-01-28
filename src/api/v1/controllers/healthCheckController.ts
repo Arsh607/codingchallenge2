@@ -1,6 +1,7 @@
 import  {healthCheck} from "../services/healthService";
 import { Request, Response } from "express";
+import { HTTP_STATUS } from "../../../constants/httpConstants";
 
 export const health = (req: Request, res: Response): void => {
-    res.status(200).json(healthCheck)
+    res.status(HTTP_STATUS.OK).json(healthCheck)
 };
